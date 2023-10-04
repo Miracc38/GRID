@@ -1,0 +1,42 @@
+body { 
+	font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+  height: 100vh;
+  margin: 10px;  
+}
+
+header {
+	background: #ff8484;
+	grid-area: header;
+}
+
+nav {
+	background: #ffed89;
+	grid-area: nav; 
+}
+
+section {
+	background: #66fff0;
+	grid-area: section;    
+}
+
+aside {
+	background: #b978ff;
+	grid-area: aside; 
+}
+
+footer {
+	background: #7388ff;
+	grid-area: footer;
+}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
